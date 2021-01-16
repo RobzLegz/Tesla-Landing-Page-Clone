@@ -18,6 +18,9 @@ function App() {
         <Item 
           title="Lowest Cost Solar Panels in America"
           desc="Money-back guarantee"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""
           backgroundImg={SolarPanels}
           leftBtnText="ORDER NOW"
           rightBtnText="LEARN MORE"
@@ -30,7 +33,10 @@ function App() {
           backgroundImg={ModelS}
           leftBtnText="CUSTOM ORDER"
           rightBtnText="EXISTING INVENTORY"
-          twoButtons="true"     
+          twoButtons="true"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""     
         />
         <Item 
           title="Model 3"
@@ -38,7 +44,10 @@ function App() {
           backgroundImg={Model3}
           leftBtnText="CUSTOM ORDER"
           rightBtnText="EXISTING INVENTORY"
-          twoButtons="true"   
+          twoButtons="true"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""   
         />
         <Item 
           title="Model X"
@@ -46,7 +55,10 @@ function App() {
           backgroundImg={ModelX}
           leftBtnText="CUSTOM ORDER"
           rightBtnText="EXISTING INVENTORY"
-          twoButtons="true"   
+          twoButtons="true"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""   
         />
         <Item 
           title="Model Y"
@@ -54,7 +66,10 @@ function App() {
           backgroundImg={ModelY}
           leftBtnText="CUSTOM ORDER"
           rightBtnText="LEARN MORE"
-          twoButtons="true"   
+          twoButtons="true"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""   
         />
         <Item 
           title="Solar for New Roofs"
@@ -62,14 +77,20 @@ function App() {
           backgroundImg={SolarRoof}
           leftBtnText="ORDER NOW"
           rightBtnText="LEARN MORE"
-          twoButtons="true"   
+          twoButtons="true"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""   
         />
         <Item 
           title="Accessories"
           desc=""
           backgroundImg={Accessories}
           leftBtnText="SHOP NOW"
-          rightBtnText="LEARN MORE"  
+          rightBtnText="LEARN MORE"
+          descLink=""
+          leftBtnLink=""
+          rightBtnLink=""  
         />
       </div>
     </div>
