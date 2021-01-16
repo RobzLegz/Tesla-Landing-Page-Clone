@@ -19,14 +19,15 @@
   margin-top: 20%;
   display: flex;
   flex-direction: column;
-  font-size: 34px;
+  font-size: 37px;
   color: #393c41;
   align-items: center;
   flex: 1;
 }
 .text-description {
   font-weight: 200;
-  font-size: 14px;
+  font-size: 16px;
+  color: #5f6061;
 }
 .item-lowerThird {
   margin-bottom: 5%;
@@ -39,8 +40,22 @@
 .item-expand {
   color: #fff;
   width: 100%;
-  margin-top: 3%;
   justify-content: center;
   display: flex;
-  transform: scale(1.7);
+  transform: scale(2);
+  animation: animateExpand infinite 1.5s;
+}
+@keyframes animateExpand {
+  0% {
+    margin-top: 2%;
+    padding-bottom: 1%;
+  }
+  50% {
+    margin-top: 3%;
+    padding-bottom: 0%;
+  }
+  100% {
+    margin-top: 2%;
+    padding-bottom: 1%;
+  }
 }
