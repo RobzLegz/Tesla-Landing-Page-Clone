@@ -6,6 +6,8 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  scroll-snap-align: start;
+  overflow-x: hidden;
 }
 .item-container {
   width: 40vw;
@@ -31,7 +33,7 @@
   display: flex;
   flex-direction: column;
 }
-.item-buttons {
+.item-btns {
   display: flex;
 }
 .item-expand {
@@ -39,4 +41,6 @@
   width: 100%;
   margin-top: 3%;
   justify-content: center;
+  display: flex;
+  transform: scale(1.7);
 }

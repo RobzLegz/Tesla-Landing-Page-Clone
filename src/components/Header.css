@@ -22,12 +22,16 @@
 .header-center p {
   margin: 10px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .header-right {
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
+  margin-right: 30px;
+  margin-left: -30px;
 }
 .header-right > p {
   margin: 10px;
+  cursor: pointer;
 }

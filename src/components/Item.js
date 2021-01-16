@@ -24,6 +24,7 @@ function Item({title,desc,backgroundImg,leftBtnText,rightBtnText,twoButtons,desc
                         )}
                     </div>
                     {first && (
+                        //if item is first, then show:
                         <div className="item-expand">
                             <ExpandMoreIcon />
                         </div>
