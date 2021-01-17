@@ -2,6 +2,14 @@ import React from 'react';
 import "./Header.css";
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
 
+const openBurger = () => {
+    const burger = document.querySelector(".burger");
+    const burgerNav = document.querySelector(".burger-sidebar");
+
+    burgerNav.classList.toggle("open-burger");
+    burger.classList.toggle(".animline");
+};
+
 function Header() {
     return (
         <div className="header">
@@ -14,12 +22,12 @@ function Header() {
                 <p>Model X</p>
                 <p>Model Y</p>
                 <p>Solar Roof</p>
-                <p>Solar Panel</p>
+                <p>Solar PanelS</p>
             </div>
             <div className="header-right">
                 <p>Shop</p>
                 <p>Tesla Account</p>
-                <div className="burger">
+                <div className="burger" onClick={openBurger}>
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>

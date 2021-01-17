@@ -33,6 +33,7 @@ li {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 16px;
+  letter-spacing: 1px;
 }
 .header-right {
   display: flex;
@@ -52,14 +53,15 @@ li {
   z-index: 10;
 }
 .burger div {
-  width: 25px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background-color: #333333;
   margin: 3px;
   margin-right: 7px;
+  transition: all 0.3s ease;
 }
 .burger-sidebar {
-  transform: translateX(0%);
+  transform: translateX(100%);
   position: absolute;
   width: 330px;
   background: #fff;
@@ -71,6 +73,10 @@ li {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  transition: transform 0.2s ease-in;
+}
+.open-burger {
+  transform: translateX(0%);
 }
 .burger-links {
   margin-top: 30px;
@@ -89,4 +95,13 @@ li {
   width: 270px;
   height: 0.5px;
   background-color: #797979;
+}
+.animline .line1 {
+  transform: rotate(-45deg) translate(-5px, 2px);
+}
+.animline .line2 {
+  opacity: 0;
+}
+.animline .line3 {
+  transform: rotate(45deg) translate(-5px, -2px);
 }
