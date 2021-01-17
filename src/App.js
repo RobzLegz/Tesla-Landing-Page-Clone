@@ -15,7 +15,7 @@ function App() {
             <Header />
             <HomePage />
           </Route>
-          <Route path="/shop" exact>
+          <Route path="/shop">
             <ShopHeader />
             <Shop />
           </Route>
