@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Header.css";
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
+import { useLocation } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const openBurger = () => {
     const burger = document.querySelector(".burger");

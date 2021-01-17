@@ -9,6 +9,7 @@ import ModelY from "./assets/Desktop-ModelY.jpeg";
 import SolarPanels from "./assets/Desktop-SolarPanels.jpeg";
 import SolarRoof from "./assets/Desktop-SolarRoof.jpeg";
 import Item from "./components/Item";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 function App() {
   return (
