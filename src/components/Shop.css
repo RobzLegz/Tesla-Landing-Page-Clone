@@ -1,9 +1,46 @@
+.shop {
+  overflow-x: hidden;
+}
 .shop-top-img-container {
-  width: 100%;
+  width: 200vw;
   height: 90vh;
+  flex-direction: row;
+  display: flex;
+  overflow: hidden;
 }
 .shop-head-img {
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   object-fit: cover;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.first-text-white-shop {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+.bestsellers-text {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.shopall-text {
+  color: rgb(161, 161, 161);
+  font-size: 13px;
+}
+.first-autoplay.autoplay1 {
+  transform: translateX(-100%);
+}
+.second-autoplay.autoplay1 {
+  transform: translateX(-100%);
+}
+.first-autoplay.autoplay2 {
+  transform: translateX(0%);
+}
+.second-autoplay.autoplay2 {
+  transform: translateX(0%);
 }
