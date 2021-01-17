@@ -5,9 +5,15 @@ import TeslaLogo from "../assets/teslaLogoSmall.svg";
 const openBurger = () => {
     const burger = document.querySelector(".burger");
     const burgerNav = document.querySelector(".burger-sidebar");
+    const noScroll = document.querySelector(".cover-noscroll");
 
     burgerNav.classList.toggle("open-burger");
-    burger.classList.toggle(".animline");
+    burger.classList.toggle("animline");
+    if(burgerNav.classList.contains("open-burger")){
+        noScroll.style.display = "block";
+    }else{
+        noScroll.style.display = "none";
+    }
 };
 
 function Header() {
@@ -63,6 +69,7 @@ function Header() {
                     <div className="link-underline"></div>
                 </ul>
             </div>
+            <div className="cover-noscroll"></div>
         </div>
     )
 }
