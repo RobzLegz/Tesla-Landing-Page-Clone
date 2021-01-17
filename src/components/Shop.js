@@ -3,7 +3,6 @@ import "./Shop.css";
 import shop1stimg from "../assets/shop1stimg.jpg";
 import shop2ndimg from "../assets/shop2ndimg.jpg";
 
-
 var counter = 1;
 setInterval(function(){
     const firstAutoplayImg = document.querySelector(".first-autoplay");
@@ -12,10 +11,9 @@ setInterval(function(){
     secondAutoplayImg.classList.add("autoplay" + counter);
     counter +=1;
     if(counter > 2){
-        counter = 0;
+        counter = 1;
     }
 }, 2000);
-
 
 function Shop() {
     return (
