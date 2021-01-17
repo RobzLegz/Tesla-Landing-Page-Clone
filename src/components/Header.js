@@ -19,6 +19,41 @@ function Header() {
             <div className="header-right">
                 <p>Shop</p>
                 <p>Tesla Account</p>
+                <div className="burger">
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
+            </div>
+            <div className="burger-sidebar">
+                <ul className="burger-links">
+                    <li><a href="#">EXISTING INVENTORY</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">USED INVENTORY</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">TRADE-IN</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">CYBERTRUCK</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">ROADSTER</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">SEMI</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">CHARGING</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">POWERWALL</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">COMMERCIAL SOLAR</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">TEST DRIVE</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">FIND US</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">SUPPORT</a></li>
+                    <div className="link-underline"></div>
+                    <li><a href="#">UNITED STATES</a></li>
+                    <div className="link-underline"></div>
+                </ul>
             </div>
         </div>
     )
