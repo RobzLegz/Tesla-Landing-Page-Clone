@@ -12,15 +12,16 @@ li {
   position: fixed;
   width: 100vw;
   top: 0;
-  margin: 15px;
-  margin-top: 15px;
   z-index: 15;
+  height: 60px;
+  align-items: center;
 }
 .header-logo {
   height: 24px;
   width: 100px;
   margin-top: 7px;
   cursor: pointer;
+  margin-left: 10px;
 }
 .header-center {
   flex: 1;
@@ -110,8 +111,33 @@ li {
   width: 100%;
   height: 100vh;
   position: absolute;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 5;
   margin: -16px;
   display: none;
+}
+.white-header p {
+  color: #fff;
+}
+.white-logo {
+  filter: brightness(0) invert(1);
+}
+.shop-logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: auto;
+}
+.dash-shop {
+  font-size: 20px;
+  margin: 0 0 0 10px;
+}
+.white-header:hover {
+  background-color: #fff;
+}
+.white-header:hover > * p {
+  color: #333333;
+}
+.white-header:hover > * .white-logo {
+  filter: brightness(0) invert(0);
 }

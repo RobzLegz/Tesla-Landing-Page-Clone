@@ -32,7 +32,7 @@ function Header() {
                 <p>Solar PanelS</p>
             </div>
             <div className="header-right">
-                <p>Shop</p>
+                <Link to="/shop"><p>Shop</p></Link>
                 <p>Tesla Account</p>
                 <div className="burger" onClick={openBurger}>
                     <div className="line1"></div>

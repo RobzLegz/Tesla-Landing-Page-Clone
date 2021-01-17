@@ -1,0 +1,9 @@
+.shop-top-img-container {
+  width: 100%;
+  height: 90vh;
+}
+.shop-head-img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
