@@ -3,6 +3,7 @@ import "./Header.css";
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
 import { useLocation } from "react-router-dom";
 import {Link} from "react-router-dom";
+import withRouter from 'react-router-dom';
 
 const openBurger = () => {
     const burger = document.querySelector(".burger");
@@ -22,7 +23,7 @@ function Header() {
     return (
         <div className="header">
             <div className="header-logo">
-                <img src={TeslaLogo} alt="tesla logo"/>
+                <Link to="/"><img src={TeslaLogo} alt="tesla logo"/></Link>
             </div>
             <div className="header-center">
                 <p>Model S</p>
