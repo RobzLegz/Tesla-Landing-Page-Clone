@@ -12,9 +12,6 @@ function ShopHeader() {
     function refreshPage() {
         window.location.reload(false);
     }
-    function handleSubmit(event) {
-        event.preventDefault();
-    }
 
     return (
         <div className="header white-header">
