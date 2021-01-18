@@ -11,9 +11,9 @@ function Shop() {
                 <div className="first-text-white-shop">
                     <p className="bestsellers-text">BEST SELLERS</p>
                     <p className="shopall-text">Shop All</p>
-                    <div className="image-slider">
-                           
-                    </div>
+                </div>
+                <div className="image-slider">
+                <ShopImageSlider />
                 </div>
             </div>
         </div>

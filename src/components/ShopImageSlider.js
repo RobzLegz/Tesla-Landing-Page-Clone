@@ -3,10 +3,10 @@ import "./Shop.css";
 
 function ShopImageSlider() {
     return (
-        <div>
-
+        <div className="image-slider">
+            <img src="./shopImgs/Cargomats.jpg" alt=""/>
         </div>
     )
 }
 
-export default ShopImageSlider
+export default ShopImageSlider;
