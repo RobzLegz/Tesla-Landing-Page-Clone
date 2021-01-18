@@ -2,6 +2,7 @@ import React from 'react';
 import "./Shop.css";
 import ShopTopImages from "./ShopTopImages";
 import ShopImageSlider from "./ShopImageSlider";
+import ShopImageGallery from './ShopImageGallery';
 
 function Shop() {
     return (
@@ -15,6 +16,7 @@ function Shop() {
                 <div className="image-slider">
                     <ShopImageSlider />
                 </div>
+                <ShopImageGallery />
             </div>
         </div>
     );

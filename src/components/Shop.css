@@ -105,3 +105,76 @@
   cursor: pointer;
   border: 1px solid rgb(92, 92, 92);
 }
+.shop-gallery {
+  margin: 40px 30px;
+  width: calc(100%-60px);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.full-gallery-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.gallery-img {
+  margin: 30px 0;
+  cursor: pointer;
+}
+.half-gallery-img {
+  width: 95%;
+  height: 45vh;
+  object-fit: cover;
+}
+.gallery-img {
+  width: 100%;
+}
+.two-img-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  position: relative;
+}
+.second-half {
+  position: absolute;
+  width: 50%;
+  right: -50px;
+  top: 0;
+}
+.first-half {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+.three-img-container {
+  width: 100%;
+  display: flex;
+  height: 90vh;
+}
+.charger-image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+.two-images-ontop {
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+.first-img-ontop {
+  width: 100%;
+  height: 50%;
+  margin: 0 0;
+  top: 0;
+  right: 0;
+}
+.top-images {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

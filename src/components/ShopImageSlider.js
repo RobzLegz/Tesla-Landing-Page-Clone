@@ -14,33 +14,35 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 function ShopImageSlider(){
 
     const imageSlide = document.querySelector(".image-slide");
+    const btnBack = document.querySelectorAll(".btn-slide back-btn");
+    const btnFwards = document.querySelectorAll(".btn-slide fwards-btn");
     const carouselImages = document.querySelector(".carousel-img");
     const imgSize = 612.96;
     let imgCounter = 1;
     imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
     const carouselFwards = () => {
-        if(imgCounter <=0){
-            return;
-        }
         imgCounter ++;
         imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
+        imageSlide.style.transition = "transform 0.4s ease-in-out";
+        console.log(imgCounter);
+        if(imgCounter >= 8){
+            imgCounter = 2;
+            imageSlide.style.transition = "none";
+            imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
+        }
     }
     const carouselBack = () => {
         imgCounter --;
         imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
+        console.log(imgCounter);
+        if(imgCounter <= -1){
+            imgCounter = 5;
+            imageSlide.style.transition = "none";
+            imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
+        }else{
+            imageSlide.style.transition = "transform 0.4s ease-in-out";
+        }
     }
-    imageSlide.addEventListener("transitionend", () => {
-        if (carouselImages[imgCounter].id === "lastagain"){
-            imageSlide.style.transition = "none";
-            imgCounter = carouselImages.length -2;
-            imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-        }
-        if(carouselImages[imgCounter].id === "firstagain"){
-            imageSlide.style.transition = "none";
-            imgCounter = carouselImages.length - imgCounter;
-            imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-        }
-    })
 
     return (
         <>
