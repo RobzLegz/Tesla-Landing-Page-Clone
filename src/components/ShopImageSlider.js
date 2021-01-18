@@ -14,9 +14,6 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 function ShopImageSlider(){
 
     const imageSlide = document.querySelector(".image-slide");
-    const btnBack = document.querySelectorAll(".btn-slide back-btn");
-    const btnFwards = document.querySelectorAll(".btn-slide fwards-btn");
-    const carouselImages = document.querySelector(".carousel-img");
     const imgSize = 612.96;
     let imgCounter = 1;
     imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";

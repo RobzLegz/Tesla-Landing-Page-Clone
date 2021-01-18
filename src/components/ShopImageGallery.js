@@ -35,7 +35,7 @@ function ShopImageGallery() {
                         <img className="first-img-ontop" src={MensApparel} alt="tesla gallery image"/>
                     </div>
                     <div className="top-images">
-                        <img className="first-img-ontop" src={WomensApparel} alt="tesla gallery image"/>
+                        <img className="second-img-ontop" src={WomensApparel} alt="tesla gallery image"/>
                     </div>
                 </div>
             </div>
