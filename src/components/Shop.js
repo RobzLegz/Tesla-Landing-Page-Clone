@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Shop.css";
-import ShopTopImages from "./ShopTopImages"
+import ShopTopImages from "./ShopTopImages";
+import ShopImageSlider from "./ShopImageSlider";
 
 function Shop() {
     return (
@@ -10,6 +11,9 @@ function Shop() {
                 <div className="first-text-white-shop">
                     <p className="bestsellers-text">BEST SELLERS</p>
                     <p className="shopall-text">Shop All</p>
+                    <div className="image-slider">
+                           
+                    </div>
                 </div>
             </div>
         </div>

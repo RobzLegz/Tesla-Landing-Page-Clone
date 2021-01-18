@@ -17,10 +17,14 @@ function ShopHeader() {
         return;
     }
 
+    const onscrollStyles = {
+        display: "none"
+    }
+
     return (
         <div className="header white-header">
             <div className="header-logo shop-logo">
-                <Link to="/"><img src={TeslaLogo} onClick={returner} className="white-logo" alt="tesla logo"/></Link>
+                <Link to="/"><img src={TeslaLogo} onClick={returner} onscroll={onscrollStyles} className="white-logo" alt="tesla logo"/></Link>
                 <Link to="/shop"><p className="dash-shop" onClick={refreshPage}>| SHOP</p></Link>
             </div>
             <div className="header-center">
