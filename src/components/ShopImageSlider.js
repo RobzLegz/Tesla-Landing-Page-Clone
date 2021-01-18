@@ -23,7 +23,7 @@ function ShopImageSlider(){
         imageSlide.style.transition = "transform 0.4s ease-in-out";
         console.log(imgCounter);
         if(imgCounter >= 8){
-            imgCounter = 2;
+            imgCounter = 0;
             imageSlide.style.transition = "none";
             imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
         }
@@ -33,7 +33,7 @@ function ShopImageSlider(){
         imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
         console.log(imgCounter);
         if(imgCounter <= -1){
-            imgCounter = 5;
+            imgCounter = 6;
             imageSlide.style.transition = "none";
             imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
         }else{
