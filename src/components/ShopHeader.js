@@ -12,11 +12,14 @@ function ShopHeader() {
     function refreshPage() {
         window.location.reload(false);
     }
+    function handleSubmit(event) {
+        event.preventDefault();
+    }
 
     return (
         <div className="header white-header">
             <div className="header-logo shop-logo">
-                <Link to="/"><img src={TeslaLogo} className="white-logo" alt="tesla logo"/></Link>
+                <Link to="/"><img src={TeslaLogo}  className="white-logo" alt="tesla logo"/></Link>
                 <Link to="/shop"><p className="dash-shop" onClick={refreshPage}>| SHOP</p></Link>
             </div>
             <div className="header-center">
