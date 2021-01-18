@@ -8,6 +8,7 @@
   justify-content: center;
   scroll-snap-align: start;
   overflow-x: hidden;
+  z-index: 2;
 }
 .item-container {
   width: 40vw;

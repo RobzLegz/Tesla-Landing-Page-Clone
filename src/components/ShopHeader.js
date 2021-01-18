@@ -8,11 +8,16 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
 
 function ShopHeader() {
+
+    function refreshPage() {
+        window.location.reload(false);
+    }
+
     return (
         <div className="header white-header">
             <div className="header-logo shop-logo">
                 <Link to="/"><img src={TeslaLogo} className="white-logo" alt="tesla logo"/></Link>
-                <p className="dash-shop">| SHOP</p>
+                <Link to="/shop"><p className="dash-shop" onClick={refreshPage}>| SHOP</p></Link>
             </div>
             <div className="header-center">
                 <p>CHARGING</p>
