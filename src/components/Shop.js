@@ -13,7 +13,7 @@ function Shop() {
                     <p className="shopall-text">Shop All</p>
                 </div>
                 <div className="image-slider">
-                <ShopImageSlider />
+                    <ShopImageSlider />
                 </div>
             </div>
         </div>
