@@ -11,6 +11,8 @@ import SolarRoof from "../assets/Desktop-SolarRoof.jpeg";
 function HomePage() {
     return (
         <div className="items-container">
+          <div className="first-autoplay"></div>
+          <div className="second-autoplay"></div>
             <Item 
               title="Lowest Cost Solar Panels in America"
               desc="Money-back guarantee"
