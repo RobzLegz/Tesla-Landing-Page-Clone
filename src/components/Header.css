@@ -141,3 +141,9 @@ li {
 .white-header:hover > * .white-logo {
   filter: brightness(0) invert(0);
 }
+.scrolled-header {
+  background-color: #fff;
+}
+.scrolled-header-link {
+  color: #333;
+}

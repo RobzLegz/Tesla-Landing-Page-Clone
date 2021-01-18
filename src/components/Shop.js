@@ -7,10 +7,6 @@ import ShopHeader from "./ShopHeader";
 
 function Shop() {
 
-    window.addEventListener("scroll",function(){
-        
-    })
-
     return (
         <div className="shop">
             <ShopHeader />

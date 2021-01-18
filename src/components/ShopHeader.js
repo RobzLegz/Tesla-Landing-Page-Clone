@@ -9,6 +9,11 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
 function ShopHeader() {
 
+    window.addEventListener("scroll",function(){
+        const header = document.querySelector(".white-header");
+        header.classList.add("scrolled-header");
+    })
+
     function refreshPage() {
         window.location.reload(false);
     }
@@ -25,19 +30,19 @@ function ShopHeader() {
         <div className="header white-header">
             <div className="header-logo shop-logo">
                 <Link to="/"><img src={TeslaLogo} onClick={returner} onscroll={onscrollStyles} className="white-logo" alt="tesla logo"/></Link>
-                <Link to="/shop"><p className="dash-shop" onClick={refreshPage}>| SHOP</p></Link>
+                <Link to="/shop"><p className="dash-shop header-linkkk" onClick={refreshPage}>| SHOP</p></Link>
             </div>
             <div className="header-center">
-                <p>CHARGING</p>
-                <p>WEHICLE ACCESSORIES</p>
-                <p>PARTS</p>
-                <p>APPAREL</p>
-                <p>LIFESTYLE</p>
+                <p className="header-linkkk">CHARGING</p>
+                <p className="header-linkkk">WEHICLE ACCESSORIES</p>
+                <p className="header-linkkk">PARTS</p>
+                <p className="header-linkkk">APPAREL</p>
+                <p className="header-linkkk">LIFESTYLE</p>
             </div>
             <div className="header-right">
-                <p>SIGN IN</p>
-                <p><SearchIcon className="white-logo"/></p>
-                <p><ShoppingCartOutlinedIcon className="white-logo"/></p>
+                <p className="header-linkkk">SIGN IN</p>
+                <p className="header-linkkk"><SearchIcon className="white-logo"/></p>
+                <p className="header-linkkk"><ShoppingCartOutlinedIcon className="white-logo"/></p>
             </div>
             
             <div className="cover-noscroll"></div>
