@@ -3,20 +3,21 @@ import "./Header.css";
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
 import {Link} from "react-router-dom";
 
-const openBurger = () => {
-    const burger = document.querySelector(".burger");
-    const burgerNav = document.querySelector(".burger-sidebar");
-    const noScroll = document.querySelector(".cover-noscroll");
-    burgerNav.classList.toggle("open-burger");
-    burger.classList.toggle("animline");
-    if(burgerNav.classList.contains("open-burger")){
-        noScroll.style.display = "block";
-    }else{
-        noScroll.style.display = "none";
-    }
-};
+function ColorWhiteHeader() {
 
-function Header() {
+    const openBurger = () => {
+        const burger = document.querySelector(".burger");
+        const burgerNav = document.querySelector(".burger-sidebar");
+        const noScroll = document.querySelector(".cover-noscroll");
+        burgerNav.classList.toggle("open-burger");
+        burger.classList.toggle("animline");
+        if(burgerNav.classList.contains("open-burger")){
+            noScroll.style.display = "block";
+        }else{
+            noScroll.style.display = "none";
+        }
+    };
+
     return (
         <div className="header">
             <div className="header-logo">
@@ -71,7 +72,8 @@ function Header() {
             </div>
             <div className="cover-noscroll"></div>
         </div>
-    )
+    );
 }
 
-export default Header
+
+export default ColorWhiteHeader;

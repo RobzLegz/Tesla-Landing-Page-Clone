@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Shop from "./components/Shop";
 import TeslaAccount from "./components/TeslaAccount";
+import Semi from "./components/Semi";
+import ColorWhiteHeader from "./components/ColorWhiteHeader";
 
 function App() {
   return (
@@ -15,11 +17,15 @@ function App() {
             <Header />
             <HomePage />
           </Route>
-          <Route path="/shop">
+          <Route path="/shop" exact>
             <Shop />
           </Route>
-          <Route path="/teslacloneaccount">
+          <Route path="/teslacloneaccount" exact>
             <TeslaAccount />
+          </Route>
+          <Route path="/semi" exact>
+            <ColorWhiteHeader />
+            <Semi />
           </Route>
         </Switch>
       </div>
