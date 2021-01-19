@@ -1,3 +1,8 @@
+# Screenshots from website:
+## Home Page
+<img src="src/screenshots/websitelandingpagescreenshot.jpg">
+<img src="src/screenshots/shoppagescreenshot.jpg">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
