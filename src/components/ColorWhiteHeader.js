@@ -19,7 +19,7 @@ function ColorWhiteHeader() {
     };
 
     return (
-        <div className="header">
+        <div className="header still-header">
             <div className="header-logo">
                 <Link to="/"><img src={TeslaLogo} alt="tesla logo"/></Link>
             </div>

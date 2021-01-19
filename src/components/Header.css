@@ -167,3 +167,7 @@ li {
 .language-country-container:hover {
   cursor: pointer;
 }
+.still-header {
+  position: relative;
+  z-index: 4;
+}

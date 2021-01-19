@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 function Semi() {
+
     return (
-        <div>
-            
+        <div className="semi-page">
         </div>
     )
 }
