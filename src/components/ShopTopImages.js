@@ -14,7 +14,7 @@ function ShopTopImages() {
         if(counter > 2){
             counter = 1;
         }
-    }, 10000);
+    }, 12000);
 
     return (
         <div>

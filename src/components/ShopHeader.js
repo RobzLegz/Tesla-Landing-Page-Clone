@@ -10,8 +10,19 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 function ShopHeader() {
 
     window.addEventListener("scroll",function(){
+        document.querySelector(".header-link").style.color = "#333";
+        document.querySelector(".header-linki").style.color = "#333";
+        document.querySelector(".header-linkk").style.color = "#333";
+        document.querySelector(".header-linkkkkk").style.color = "#333";
+        document.querySelector(".header-linkkkk").style.color = "#333";
+        document.querySelector(".header-linkkkkkk").style.color = "#333";
+        document.querySelector(".white-logo").style.filter =  "brightness(0) invert(0)";
+        document.querySelector(".white-logos").style.filter =  "brightness(0) invert(0)";
+        document.querySelector(".white-logod").style.filter =  "brightness(0) invert(0)";
         const header = document.querySelector(".white-header");
         header.classList.add("scrolled-header");
+        const headerLink = document.querySelector(".header-linkkk")
+        headerLink.style.color = "#333";
     })
 
     function refreshPage() {
@@ -33,16 +44,16 @@ function ShopHeader() {
                 <Link to="/shop"><p className="dash-shop header-linkkk" onClick={refreshPage}>| SHOP</p></Link>
             </div>
             <div className="header-center">
-                <p className="header-linkkk">CHARGING</p>
-                <p className="header-linkkk">WEHICLE ACCESSORIES</p>
-                <p className="header-linkkk">PARTS</p>
-                <p className="header-linkkk">APPAREL</p>
-                <p className="header-linkkk">LIFESTYLE</p>
+                <p className="header-link">CHARGING</p>
+                <p className="header-linkk">WEHICLE ACCESSORIES</p>
+                <p className="header-linkkkk">PARTS</p>
+                <p className="header-linkkkkk">APPAREL</p>
+                <p className="header-linkkkkkk">LIFESTYLE</p>
             </div>
             <div className="header-right">
-                <p className="header-linkkk">SIGN IN</p>
-                <p className="header-linkkk"><SearchIcon className="white-logo"/></p>
-                <p className="header-linkkk"><ShoppingCartOutlinedIcon className="white-logo"/></p>
+                <p className="header-linki">SIGN IN</p>
+                <p><SearchIcon className="white-logos"/></p>
+                <p><ShoppingCartOutlinedIcon className="white-logod"/></p>
             </div>
             
             <div className="cover-noscroll"></div>

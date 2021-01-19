@@ -13,38 +13,12 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 function ShopImageSlider(){
 
-    const imageSlide = document.querySelector(".image-slide");
-    const imgSize = 612.96;
-    let imgCounter = 1;
-    imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-    const carouselFwards = () => {
-        imgCounter ++;
-        imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-        imageSlide.style.transition = "transform 0.4s ease-in-out";
-        console.log(imgCounter);
-        if(imgCounter >= 8){
-            imgCounter = 0;
-            imageSlide.style.transition = "none";
-            imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-        }
-    }
-    const carouselBack = () => {
-        imgCounter --;
-        imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-        console.log(imgCounter);
-        if(imgCounter <= -1){
-            imgCounter = 6;
-            imageSlide.style.transition = "none";
-            imageSlide.style.transform = 'translateX(' + (-imgSize * imgCounter) + "px)";
-        }else{
-            imageSlide.style.transition = "transform 0.4s ease-in-out";
-        }
-    }
+    
 
     return (
         <>
             <div className="image-slider">
-                <button className="btn-slide back-btn" onClick={carouselBack}><ArrowBackIosIcon /></button>
+                <button className="btn-slide back-btn" ><ArrowBackIosIcon /></button>
                 <div className="image-slide">
                     <img className="carousel-img" id="lastagain" src={Diecast} alt="shop product img"/>  
                     <img className="carousel-img" src={Mobileconnector} alt="shop product img"/>
@@ -57,7 +31,7 @@ function ShopImageSlider(){
                     <img className="carousel-img" src={Diecast} alt="shop product img"/>        
                     <img className="carousel-img" id="firstagain" src={Mobileconnector} alt="shop product img"/>                      
                 </div>
-                <button className="btn-slide fwards-btn" onClick={carouselFwards}><ArrowForwardIosIcon /></button>
+                <button className="btn-slide fwards-btn" ><ArrowForwardIosIcon /></button>
             </div>
         </>
     )

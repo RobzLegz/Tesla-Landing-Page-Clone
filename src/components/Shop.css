@@ -129,6 +129,7 @@
 }
 .gallery-img {
   width: 100%;
+  position: relative;
 }
 .two-img-container {
   width: 100%;
@@ -188,4 +189,49 @@
 }
 .first-img-ontop {
   margin-top: 30px;
+}
+.about-gallery-img {
+  position: absolute;
+  font-size: 2rem;
+  left: 20%;
+  top: 50%;
+}
+.right-about-img-text {
+  top: 50%;
+  left: 70%;
+}
+.black-about-image {
+  color: #333;
+}
+.charger-text {
+  font-size: 2rem;
+  top: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.model-gallery-text {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.white-text-gallery {
+  color: #fff;
+}
+.womens-apparel-text {
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+.mens-apparel-text {
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
