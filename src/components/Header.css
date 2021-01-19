@@ -147,3 +147,20 @@ li {
 .scrolled-linkkkk {
   color: #333;
 }
+#shop-link {
+  padding-right: 10px;
+}
+#account-link {
+  padding-right: 10px;
+}
+.login-header-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.language-country-container {
+  display: flex;
+  width: 100px;
+  flex-direction: row;
+}

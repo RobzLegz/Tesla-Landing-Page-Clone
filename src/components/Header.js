@@ -31,8 +31,8 @@ function Header() {
                 <p>Solar PanelS</p>
             </div>
             <div className="header-right">
-                <Link to="/shop"><p>Shop</p></Link>
-                <Link to="/teslacloneaccount"><p>Tesla Account</p></Link>
+                <Link to="/shop"><p id="shop-link">Shop</p></Link>
+                <Link to="/teslacloneaccount"><p id="account-link">Tesla Account</p></Link>
                 <div className="burger" onClick={openBurger}>
                     <div className="line1"></div>
                     <div className="line2"></div>
