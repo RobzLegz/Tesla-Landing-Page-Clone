@@ -108,8 +108,8 @@ li {
   transform: rotate(45deg) translate(-5px, -2px);
 }
 .cover-noscroll {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 200vh;
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
   z-index: 5;

@@ -28,10 +28,6 @@
   font-size: 14px;
   letter-spacing: 2px;
 }
-.bestsellers-text:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
 .shopall-text {
   color: rgb(161, 161, 161);
   font-size: 13px;
