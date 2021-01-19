@@ -7,32 +7,36 @@ function TeslaAccount() {
     return (
         <div>
             <LoginHeader />
-            <div className="signin-form">
-                <div className="input-container">
-                    <div className="email container">
-                        <label>Email Address</label>
-                        <p><InfoOutlinedIcon /></p>
+            <div className="all-sign-in">
+                <h2>Sign In</h2>
+                <div className="signin-form">
+                    <div className="input-container">
+                        <div id="toptop" className="email-container">
+                            <label>Email Address</label>
+                            <p><InfoOutlinedIcon className="pointer" style={{ fill: 'rgb(117, 117, 117)' }}/></p>
+                        </div>
+                        <input type="text" autoComplete="off"/>
                     </div>
-                    <input type="text" autoComplete="off"/>
+                    <div className="input-container">
+                        <label>Password</label>
+                        <input type="password" autoComplete="off"/>
+                    </div>
+                    <button className="signin-btn">SIGN IN</button>
+                    <div className="under-btn-text">
+                        <p>Forgot email?</p>
+                        <p id="dashdash">|</p>
+                        <p>Forgot password?</p>
+                    </div>
+                    <div className="or-container">
+                        <div className="or-line"></div>
+                        <p>OR</p>
+                        <div className="or-line"></div>
+                    </div>
+                    <button className="create-account-btn">CREATE ACCOUNT</button>
                 </div>
-                <div className="input-container">
-                    <label>Password</label>
-                    <input type="password" autoComplete="off"/>
-                </div>
-                <button className="signin-btn">SIGN IN</button>
-                <div className="under-btn-text">
-                    <p>Forgot email?</p>
-                    <p>|</p>
-                    <p>Forgot password?</p>
-                </div>
-                <div className="or-container">
-                    <div className="or-line"></div>
-                    <p>OR</p>
-                    <div className="or-line"></div>
-                </div>
-                <button className="create-account-btn">CREATE ACCOUNT</button>
             </div>
         </div>
+            
     )
 }
 

@@ -1,7 +1,119 @@
-.signin-form {
-  width: auto;
+.all-sign-in {
+  width: 400px;
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -30%);
+}
+.signin-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h2 {
+  font-size: 2rem;
+  color: #333;
+  letter-spacing: 2px;
+}
+#toptop {
+  margin-top: 20px;
+}
+.input-container {
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.email-container {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+input {
+  width: 370px;
+  outline: none;
+  border: none;
+  background: rgb(233, 233, 233);
+  height: 40px;
+  border-radius: 300px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #000;
+}
+label {
+  color: rgb(117, 117, 117);
+  margin-bottom: 10px;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.pointer {
+  transform: scale(0.8);
+  margin-left: -10px;
+}
+.under-btn-text {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.under-btn-text p {
+  color: rgb(117, 117, 117);
+  font-size: 10px;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  margin: 10px 0 20px 0;
+  transition: border 0.5s ease;
+}
+.under-btn-text p:hover {
+  border-bottom: 2px solid rgb(117, 117, 117);
+  cursor: pointer;
+}
+#dashdash {
+  border: none;
+}
+.or-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.or-line {
+  width: 150px;
+  height: 0.3px;
+  background-color: rgb(155, 154, 154);
+}
+.signin-btn {
+  width: 400px;
+  margin: 10px auto;
+  height: 40px;
+  border: none;
+  transition: background 0.5s ease;
+  cursor: pointer;
+  border-radius: 300px;
+  outline: none;
+  background: #3457b1;
+  color: #fff;
+}
+.signin-btn:hover {
+  background: #374b7e;
+}
+.create-account-btn {
+  width: 400px;
+  margin: 10px auto;
+  height: 40px;
+  border: none;
+  transition: background 0.5s ease;
+  cursor: pointer;
+  border-radius: 300px;
+  outline: none;
+  background: none;
+  border: 2px solid #000;
+  transition: all 0.5s ease;
+}
+.create-account-btn:hover {
+  background: #000;
+  color: #fff;
 }

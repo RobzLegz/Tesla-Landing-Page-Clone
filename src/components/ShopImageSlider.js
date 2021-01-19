@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import "./Shop.css";
 import Cargomats from "../assets/Desktop-cargomats.jpeg";
 import Mobileconnector from "../assets/Desktop-connectormobile.jpeg";

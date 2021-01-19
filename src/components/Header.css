@@ -164,3 +164,6 @@ li {
   width: 100px;
   flex-direction: row;
 }
+.language-country-container:hover {
+  cursor: pointer;
+}
