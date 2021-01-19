@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Shop from "./components/Shop";
+import TeslaAccount from "./components/TeslaAccount";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/shop">
             <Shop />
+          </Route>
+          <Route path="/teslacloneaccount">
+            <TeslaAccount />
           </Route>
         </Switch>
       </div>

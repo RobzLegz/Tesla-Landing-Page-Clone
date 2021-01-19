@@ -32,7 +32,7 @@ function Header() {
             </div>
             <div className="header-right">
                 <Link to="/shop"><p>Shop</p></Link>
-                <p>Tesla Account</p>
+                <Link to="/teslacloneaccount"><p>Tesla Account</p></Link>
                 <div className="burger" onClick={openBurger}>
                     <div className="line1"></div>
                     <div className="line2"></div>
