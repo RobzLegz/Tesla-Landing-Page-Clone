@@ -168,6 +168,14 @@ li {
   cursor: pointer;
 }
 .still-header {
-  position: relative;
+  position: absolute;
   z-index: 4;
+  top: 0;
+  left: 0;
+}
+.still-header > * p {
+  color: #fff;
+}
+.still-header .burger > *div {
+  background-color: #fff;
 }
