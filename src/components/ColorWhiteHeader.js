@@ -21,7 +21,7 @@ function ColorWhiteHeader() {
     return (
         <div className="header still-header">
             <div className="header-logo">
-                <Link to="/"><img src={TeslaLogo} alt="tesla logo"/></Link>
+                <Link to="/"><img className="white-logo" src={TeslaLogo} alt="tesla logo"/></Link>
             </div>
             <div className="header-center">
                 <p>Model S</p>
@@ -34,10 +34,10 @@ function ColorWhiteHeader() {
             <div className="header-right">
                 <Link to="/shop"><p id="shop-link">Shop</p></Link>
                 <Link to="/teslacloneaccount"><p id="account-link">Tesla Account</p></Link>
-                <div className="burger" onClick={openBurger}>
-                    <div className="line1"></div>
-                    <div className="line2"></div>
-                    <div className="line3"></div>
+                <div className="burger white-burger" onClick={openBurger}>
+                    <div className="burgerline line1"></div>
+                    <div className="burgerline line2"></div>
+                    <div className="burgerline line3"></div>
                 </div>
             </div>
             <div className="burger-sidebar">

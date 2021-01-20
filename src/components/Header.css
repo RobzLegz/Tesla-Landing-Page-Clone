@@ -176,6 +176,6 @@ li {
 .still-header > * p {
   color: #fff;
 }
-.still-header .burger > *div {
-  background-color: #fff;
+.white-burger > div {
+  background: #fff;
 }
